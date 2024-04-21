@@ -25,6 +25,10 @@ NOTE: This file is *not* currently used, for context see:
             return YES;
         }
     }
+
+    if ([otherGestureRecognizer.view isKindOfClass: UIScrollView.class]) {
+        return YES;
+    }
     return NO;
 }
 
